@@ -63,6 +63,29 @@ namespace JBUniversity.Data
                         TypeOfStudent = 2
                     }
                 );
+
+                context.Cohorts.AddRange(
+                    new Cohort
+                    {
+                        Name = "Conspiracy Theories In U.S. History"
+                    },
+                    new Cohort
+                    {
+                        Name = "Anthropology"
+                    },
+                    new Cohort
+                    {
+                        Name = "Grifting 101"
+                    },
+                    new Cohort
+                    {
+                        Name = "Ladders"
+                    },
+                    new Cohort
+                    {
+                        Name = "History of Ice Cream"
+                    }
+                    );
                 context.SaveChanges();
             }
         }

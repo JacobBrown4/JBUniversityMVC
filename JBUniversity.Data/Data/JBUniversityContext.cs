@@ -16,5 +16,6 @@ namespace JBUniversity.Data.Data
         }
 
         public DbSet<JBUniversity.Data.Student> Students { get; set; }
+        public DbSet<JBUniversity.Data.Cohort> Cohorts { get; set; }
     }
 }

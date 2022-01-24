@@ -11,6 +11,7 @@ builder.Services.AddDbContext<JBUniversityContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IStudentService, StudentService>();
+builder.Services.AddTransient<ICohortService, CohortService>();
 
 var app = builder.Build();
 
